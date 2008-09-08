@@ -1,0 +1,508 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DDD58140DA1D0A300B32029 /* MainMenu.xib */; };
+		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
+		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
+		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+		8F1BB2A40E5E7F160064DF8D /* AppController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F1BB2A30E5E7F160064DF8D /* AppController.m */; };
+		8F1BB2A90E5E7F300064DF8D /* ITunesController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F1BB2A80E5E7F300064DF8D /* ITunesController.m */; };
+		8F1BB2BF0E5E80BB0064DF8D /* BrucknerStatusItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F1BB2BE0E5E80BB0064DF8D /* BrucknerStatusItemView.m */; };
+		8F1BB3860E5E93410064DF8D /* BGHUDAppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F1BB3850E5E93410064DF8D /* BGHUDAppKit.framework */; };
+		8F1BB3A10E5E934F0064DF8D /* BGHUDAppKit.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8F1BB3850E5E93410064DF8D /* BGHUDAppKit.framework */; };
+		8F1BB3F70E5E97180064DF8D /* BrucknerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F1BB3F60E5E97180064DF8D /* BrucknerView.m */; };
+		8F1BB40E0E5E98010064DF8D /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 8F1BB40D0E5E98010064DF8D /* Credits.rtf */; };
+		8F23F93F0E67B5CB00396F32 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F23F93E0E67B5CB00396F32 /* QuartzCore.framework */; };
+		8F254C4C0E73266900A14A71 /* Cover.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F254C4B0E73266900A14A71 /* Cover.png */; };
+		8F254E090E7346AA00A14A71 /* BB.icns in Resources */ = {isa = PBXBuildFile; fileRef = 8F254E080E7346AA00A14A71 /* BB.icns */; };
+		8F254E5E0E734B6C00A14A71 /* BrucknerPanel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F254E5D0E734B6C00A14A71 /* BrucknerPanel.m */; };
+		8F3931B00E7287A600FF8877 /* MAAttachedWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F3931AF0E7287A600FF8877 /* MAAttachedWindow.m */; };
+		8F3931B60E7288D900FF8877 /* BrucknerDesktopWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F3931B50E7288D900FF8877 /* BrucknerDesktopWindow.m */; };
+		8F39320A0E728B7400FF8877 /* DesktopWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F3932090E728B7400FF8877 /* DesktopWindowController.m */; };
+		8F3935260E72CC3400FF8877 /* BrucknerStatusItemController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F3935250E72CC3400FF8877 /* BrucknerStatusItemController.m */; };
+		8F3935BD0E72CFF900FF8877 /* BrucknerPanelController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F3935BC0E72CFF900FF8877 /* BrucknerPanelController.m */; };
+		8F6821230E7409BD0021DA01 /* Bruckner150.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F6821220E7409BD0021DA01 /* Bruckner150.png */; };
+		8F6822A70E741E1D0021DA01 /* EyeTunes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F6822A60E741E1D0021DA01 /* EyeTunes.framework */; };
+		8F6822AA0E741E280021DA01 /* EyeTunes.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8F6822A60E741E1D0021DA01 /* EyeTunes.framework */; };
+		8F6822D90E742D5E0021DA01 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 8F6822D80E742D5E0021DA01 /* LICENSE */; };
+		8F6822DD0E742DBC0021DA01 /* TODO in Resources */ = {isa = PBXBuildFile; fileRef = 8F6822DC0E742DBC0021DA01 /* TODO */; };
+		8F6822E10E742E9C0021DA01 /* ChangeLog in Resources */ = {isa = PBXBuildFile; fileRef = 8F6822E00E742E9C0021DA01 /* ChangeLog */; };
+		8F6B9E070E681080001FE705 /* NSImage+Bruckner.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F6B9E060E681080001FE705 /* NSImage+Bruckner.m */; };
+		8F6E63E80E619C9800DAE4AD /* BrucknerITunesEvents.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F6E63E70E619C9800DAE4AD /* BrucknerITunesEvents.m */; };
+		8F889FAA0E7545F00088AFB4 /* Prev.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F889FA60E7545F00088AFB4 /* Prev.png */; };
+		8F889FAB0E7545F00088AFB4 /* Next.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F889FA70E7545F00088AFB4 /* Next.png */; };
+		8F889FAC0E7545F00088AFB4 /* Pause.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F889FA80E7545F00088AFB4 /* Pause.png */; };
+		8F889FAD0E7545F00088AFB4 /* Play.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F889FA90E7545F00088AFB4 /* Play.png */; };
+		8F88A0030E7567660088AFB4 /* ETEyeTunes+Bruckner.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F88A0020E7567660088AFB4 /* ETEyeTunes+Bruckner.m */; };
+		8F88A1100E75C21E0088AFB4 /* README.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 8F88A10F0E75C21E0088AFB4 /* README.rtf */; };
+		8FC933040E610F3600D21805 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FC933030E610F3600D21805 /* Carbon.framework */; };
+		8FD9B0100E65CAD7000FD4E7 /* BrucknerAlbumArtView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FD9B00F0E65CAD7000FD4E7 /* BrucknerAlbumArtView.m */; };
+		8FF875C60E6062C7002715BD /* BrucknerPlayPauseButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FF875C50E6062C7002715BD /* BrucknerPlayPauseButton.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8F1BB3730E5E92F60064DF8D /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				8F6822AA0E741E280021DA01 /* EyeTunes.framework in CopyFiles */,
+				8F1BB3A10E5E934F0064DF8D /* BGHUDAppKit.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		089C165DFE840E0CC02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		13E42FB307B3F0F600E4EEF1 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
+		1DDD58150DA1D0A300B32029 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		32CA4F630368D1EE00C91783 /* Bruckner_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bruckner_Prefix.pch; sourceTree = "<group>"; };
+		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8D1107320486CEB800E47090 /* Bruckner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bruckner.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F1BB2A20E5E7F160064DF8D /* AppController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppController.h; sourceTree = "<group>"; };
+		8F1BB2A30E5E7F160064DF8D /* AppController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppController.m; sourceTree = "<group>"; };
+		8F1BB2A70E5E7F300064DF8D /* ITunesController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ITunesController.h; sourceTree = "<group>"; };
+		8F1BB2A80E5E7F300064DF8D /* ITunesController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ITunesController.m; sourceTree = "<group>"; };
+		8F1BB2BD0E5E80BB0064DF8D /* BrucknerStatusItemView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BrucknerStatusItemView.h; sourceTree = "<group>"; };
+		8F1BB2BE0E5E80BB0064DF8D /* BrucknerStatusItemView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BrucknerStatusItemView.m; sourceTree = "<group>"; };
+		8F1BB3850E5E93410064DF8D /* BGHUDAppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BGHUDAppKit.framework; path = ../Source/BGHUDAppKit/build/Release/BGHUDAppKit.framework; sourceTree = SOURCE_ROOT; };
+		8F1BB3F50E5E97180064DF8D /* BrucknerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BrucknerView.h; sourceTree = "<group>"; };
+		8F1BB3F60E5E97180064DF8D /* BrucknerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BrucknerView.m; sourceTree = "<group>"; };
+		8F1BB40D0E5E98010064DF8D /* Credits.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = Credits.rtf; sourceTree = "<group>"; };
+		8F23F93E0E67B5CB00396F32 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = /System/Library/Frameworks/QuartzCore.framework; sourceTree = "<absolute>"; };
+		8F254C4B0E73266900A14A71 /* Cover.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Cover.png; sourceTree = "<group>"; };
+		8F254E080E7346AA00A14A71 /* BB.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = BB.icns; sourceTree = "<group>"; };
+		8F254E5C0E734B6C00A14A71 /* BrucknerPanel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BrucknerPanel.h; sourceTree = "<group>"; };
+		8F254E5D0E734B6C00A14A71 /* BrucknerPanel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BrucknerPanel.m; sourceTree = "<group>"; };
+		8F3931AE0E7287A600FF8877 /* MAAttachedWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAAttachedWindow.h; sourceTree = "<group>"; };
+		8F3931AF0E7287A600FF8877 /* MAAttachedWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MAAttachedWindow.m; sourceTree = "<group>"; };
+		8F3931B40E7288D900FF8877 /* BrucknerDesktopWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BrucknerDesktopWindow.h; sourceTree = "<group>"; };
+		8F3931B50E7288D900FF8877 /* BrucknerDesktopWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BrucknerDesktopWindow.m; sourceTree = "<group>"; };
+		8F3932080E728B7400FF8877 /* DesktopWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DesktopWindowController.h; sourceTree = "<group>"; };
+		8F3932090E728B7400FF8877 /* DesktopWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DesktopWindowController.m; sourceTree = "<group>"; };
+		8F3935240E72CC3400FF8877 /* BrucknerStatusItemController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BrucknerStatusItemController.h; sourceTree = "<group>"; };
+		8F3935250E72CC3400FF8877 /* BrucknerStatusItemController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BrucknerStatusItemController.m; sourceTree = "<group>"; };
+		8F3935BB0E72CFF900FF8877 /* BrucknerPanelController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BrucknerPanelController.h; sourceTree = "<group>"; };
+		8F3935BC0E72CFF900FF8877 /* BrucknerPanelController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BrucknerPanelController.m; sourceTree = "<group>"; };
+		8F6821220E7409BD0021DA01 /* Bruckner150.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Bruckner150.png; sourceTree = "<group>"; };
+		8F6822A60E741E1D0021DA01 /* EyeTunes.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = EyeTunes.framework; sourceTree = "<group>"; };
+		8F6822D80E742D5E0021DA01 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		8F6822DC0E742DBC0021DA01 /* TODO */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TODO; sourceTree = "<group>"; };
+		8F6822E00E742E9C0021DA01 /* ChangeLog */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ChangeLog; sourceTree = "<group>"; };
+		8F6B9E050E681080001FE705 /* NSImage+Bruckner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSImage+Bruckner.h"; sourceTree = "<group>"; };
+		8F6B9E060E681080001FE705 /* NSImage+Bruckner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSImage+Bruckner.m"; sourceTree = "<group>"; };
+		8F6E63E60E619C9800DAE4AD /* BrucknerITunesEvents.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BrucknerITunesEvents.h; sourceTree = "<group>"; };
+		8F6E63E70E619C9800DAE4AD /* BrucknerITunesEvents.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BrucknerITunesEvents.m; sourceTree = "<group>"; };
+		8F889FA60E7545F00088AFB4 /* Prev.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Prev.png; sourceTree = "<group>"; };
+		8F889FA70E7545F00088AFB4 /* Next.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Next.png; sourceTree = "<group>"; };
+		8F889FA80E7545F00088AFB4 /* Pause.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Pause.png; sourceTree = "<group>"; };
+		8F889FA90E7545F00088AFB4 /* Play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Play.png; sourceTree = "<group>"; };
+		8F88A0010E7567660088AFB4 /* ETEyeTunes+Bruckner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ETEyeTunes+Bruckner.h"; sourceTree = "<group>"; };
+		8F88A0020E7567660088AFB4 /* ETEyeTunes+Bruckner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ETEyeTunes+Bruckner.m"; sourceTree = "<group>"; };
+		8F88A10F0E75C21E0088AFB4 /* README.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = README.rtf; sourceTree = "<group>"; };
+		8FC933030E610F3600D21805 /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = System/Library/Frameworks/Carbon.framework; sourceTree = SDKROOT; };
+		8FD9B00E0E65CAD7000FD4E7 /* BrucknerAlbumArtView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BrucknerAlbumArtView.h; sourceTree = "<group>"; };
+		8FD9B00F0E65CAD7000FD4E7 /* BrucknerAlbumArtView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BrucknerAlbumArtView.m; sourceTree = "<group>"; };
+		8FF875C40E6062C7002715BD /* BrucknerPlayPauseButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BrucknerPlayPauseButton.h; sourceTree = "<group>"; };
+		8FF875C50E6062C7002715BD /* BrucknerPlayPauseButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BrucknerPlayPauseButton.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8D11072E0486CEB800E47090 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
+				8F1BB3860E5E93410064DF8D /* BGHUDAppKit.framework in Frameworks */,
+				8FC933040E610F3600D21805 /* Carbon.framework in Frameworks */,
+				8F23F93F0E67B5CB00396F32 /* QuartzCore.framework in Frameworks */,
+				8F6822A70E741E1D0021DA01 /* EyeTunes.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				8F3931A50E72872500FF8877 /* HUD Window */,
+				8F545EF60E67E14200B14642 /* Desktop Window */,
+				8F1BB2A20E5E7F160064DF8D /* AppController.h */,
+				8F1BB2A30E5E7F160064DF8D /* AppController.m */,
+				8F1BB2A70E5E7F300064DF8D /* ITunesController.h */,
+				8F1BB2A80E5E7F300064DF8D /* ITunesController.m */,
+				8F6E63E60E619C9800DAE4AD /* BrucknerITunesEvents.h */,
+				8F6E63E70E619C9800DAE4AD /* BrucknerITunesEvents.m */,
+				8F6B9E050E681080001FE705 /* NSImage+Bruckner.h */,
+				8F6B9E060E681080001FE705 /* NSImage+Bruckner.m */,
+				8F88A0010E7567660088AFB4 /* ETEyeTunes+Bruckner.h */,
+				8F88A0020E7567660088AFB4 /* ETEyeTunes+Bruckner.m */,
+				8F3931A80E72875F00FF8877 /* StatusItem - UNUSED! */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8F6822A60E741E1D0021DA01 /* EyeTunes.framework */,
+				8F23F93E0E67B5CB00396F32 /* QuartzCore.framework */,
+				8FC933030E610F3600D21805 /* Carbon.framework */,
+				8F1BB3850E5E93410064DF8D /* BGHUDAppKit.framework */,
+				1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */,
+			);
+			name = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
+		1058C7A2FEA54F0111CA2CBB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				29B97324FDCFA39411CA2CEA /* AppKit.framework */,
+				13E42FB307B3F0F600E4EEF1 /* CoreData.framework */,
+				29B97325FDCFA39411CA2CEA /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D1107320486CEB800E47090 /* Bruckner.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* Bruckner */ = {
+			isa = PBXGroup;
+			children = (
+				080E96DDFE201D6D7F000001 /* Classes */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = Bruckner;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				32CA4F630368D1EE00C91783 /* Bruckner_Prefix.pch */,
+				29B97316FDCFA39411CA2CEA /* main.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8F88A10F0E75C21E0088AFB4 /* README.rtf */,
+				8F1BB5570E5F48CB0064DF8D /* Images */,
+				8D1107310486CEB800E47090 /* Info.plist */,
+				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
+				1DDD58140DA1D0A300B32029 /* MainMenu.xib */,
+				8F6822E00E742E9C0021DA01 /* ChangeLog */,
+				8F6822DC0E742DBC0021DA01 /* TODO */,
+				8F1BB40D0E5E98010064DF8D /* Credits.rtf */,
+				8F6822D80E742D5E0021DA01 /* LICENSE */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */,
+				1058C7A2FEA54F0111CA2CBB /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8F1BB5570E5F48CB0064DF8D /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				8F889FA60E7545F00088AFB4 /* Prev.png */,
+				8F889FA70E7545F00088AFB4 /* Next.png */,
+				8F889FA80E7545F00088AFB4 /* Pause.png */,
+				8F889FA90E7545F00088AFB4 /* Play.png */,
+				8F6821220E7409BD0021DA01 /* Bruckner150.png */,
+				8F254E080E7346AA00A14A71 /* BB.icns */,
+				8F254C4B0E73266900A14A71 /* Cover.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		8F3931A50E72872500FF8877 /* HUD Window */ = {
+			isa = PBXGroup;
+			children = (
+				8FF875C40E6062C7002715BD /* BrucknerPlayPauseButton.h */,
+				8FF875C50E6062C7002715BD /* BrucknerPlayPauseButton.m */,
+				8F3935BB0E72CFF900FF8877 /* BrucknerPanelController.h */,
+				8F3935BC0E72CFF900FF8877 /* BrucknerPanelController.m */,
+				8F254E5C0E734B6C00A14A71 /* BrucknerPanel.h */,
+				8F254E5D0E734B6C00A14A71 /* BrucknerPanel.m */,
+			);
+			name = "HUD Window";
+			sourceTree = "<group>";
+		};
+		8F3931A80E72875F00FF8877 /* StatusItem - UNUSED! */ = {
+			isa = PBXGroup;
+			children = (
+				8F3935240E72CC3400FF8877 /* BrucknerStatusItemController.h */,
+				8F3935250E72CC3400FF8877 /* BrucknerStatusItemController.m */,
+				8F1BB2BD0E5E80BB0064DF8D /* BrucknerStatusItemView.h */,
+				8F1BB2BE0E5E80BB0064DF8D /* BrucknerStatusItemView.m */,
+				8F3931AE0E7287A600FF8877 /* MAAttachedWindow.h */,
+				8F3931AF0E7287A600FF8877 /* MAAttachedWindow.m */,
+			);
+			name = "StatusItem - UNUSED!";
+			sourceTree = "<group>";
+		};
+		8F545EF60E67E14200B14642 /* Desktop Window */ = {
+			isa = PBXGroup;
+			children = (
+				8FD9B00E0E65CAD7000FD4E7 /* BrucknerAlbumArtView.h */,
+				8FD9B00F0E65CAD7000FD4E7 /* BrucknerAlbumArtView.m */,
+				8F3932080E728B7400FF8877 /* DesktopWindowController.h */,
+				8F3932090E728B7400FF8877 /* DesktopWindowController.m */,
+				8F3931B40E7288D900FF8877 /* BrucknerDesktopWindow.h */,
+				8F3931B50E7288D900FF8877 /* BrucknerDesktopWindow.m */,
+				8F1BB3F50E5E97180064DF8D /* BrucknerView.h */,
+				8F1BB3F60E5E97180064DF8D /* BrucknerView.m */,
+			);
+			name = "Desktop Window";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8D1107260486CEB800E47090 /* Bruckner */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "Bruckner" */;
+			buildPhases = (
+				8D1107290486CEB800E47090 /* Resources */,
+				8D11072C0486CEB800E47090 /* Sources */,
+				8D11072E0486CEB800E47090 /* Frameworks */,
+				8F1BB3730E5E92F60064DF8D /* CopyFiles */,
+				8F1BB3A40E5E93870064DF8D /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Bruckner;
+			productInstallPath = "$(HOME)/Applications";
+			productName = Bruckner;
+			productReference = 8D1107320486CEB800E47090 /* Bruckner.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Bruckner" */;
+			compatibilityVersion = "Xcode 3.1";
+			hasScannedForEncodings = 1;
+			mainGroup = 29B97314FDCFA39411CA2CEA /* Bruckner */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8D1107260486CEB800E47090 /* Bruckner */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8D1107290486CEB800E47090 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */,
+				1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */,
+				8F1BB40E0E5E98010064DF8D /* Credits.rtf in Resources */,
+				8F254C4C0E73266900A14A71 /* Cover.png in Resources */,
+				8F254E090E7346AA00A14A71 /* BB.icns in Resources */,
+				8F6821230E7409BD0021DA01 /* Bruckner150.png in Resources */,
+				8F6822D90E742D5E0021DA01 /* LICENSE in Resources */,
+				8F6822DD0E742DBC0021DA01 /* TODO in Resources */,
+				8F6822E10E742E9C0021DA01 /* ChangeLog in Resources */,
+				8F889FAA0E7545F00088AFB4 /* Prev.png in Resources */,
+				8F889FAB0E7545F00088AFB4 /* Next.png in Resources */,
+				8F889FAC0E7545F00088AFB4 /* Pause.png in Resources */,
+				8F889FAD0E7545F00088AFB4 /* Play.png in Resources */,
+				8F88A1100E75C21E0088AFB4 /* README.rtf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8F1BB3A40E5E93870064DF8D /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "rm -fR \"${CONFIGURATION_BUILD_DIR}/${WRAPPER_NAME}/Contents/Frameworks/BGHUDAppKit.framework/Versions/Current/Resources\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8D11072C0486CEB800E47090 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D11072D0486CEB800E47090 /* main.m in Sources */,
+				8F1BB2A40E5E7F160064DF8D /* AppController.m in Sources */,
+				8F1BB2A90E5E7F300064DF8D /* ITunesController.m in Sources */,
+				8F1BB2BF0E5E80BB0064DF8D /* BrucknerStatusItemView.m in Sources */,
+				8F1BB3F70E5E97180064DF8D /* BrucknerView.m in Sources */,
+				8FF875C60E6062C7002715BD /* BrucknerPlayPauseButton.m in Sources */,
+				8F6E63E80E619C9800DAE4AD /* BrucknerITunesEvents.m in Sources */,
+				8FD9B0100E65CAD7000FD4E7 /* BrucknerAlbumArtView.m in Sources */,
+				8F6B9E070E681080001FE705 /* NSImage+Bruckner.m in Sources */,
+				8F3931B00E7287A600FF8877 /* MAAttachedWindow.m in Sources */,
+				8F3931B60E7288D900FF8877 /* BrucknerDesktopWindow.m in Sources */,
+				8F39320A0E728B7400FF8877 /* DesktopWindowController.m in Sources */,
+				8F3935260E72CC3400FF8877 /* BrucknerStatusItemController.m in Sources */,
+				8F3935BD0E72CFF900FF8877 /* BrucknerPanelController.m in Sources */,
+				8F254E5E0E734B6C00A14A71 /* BrucknerPanel.m in Sources */,
+				8F88A0030E7567660088AFB4 /* ETEyeTunes+Bruckner.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		089C165CFE840E0CC02AAC07 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				089C165DFE840E0CC02AAC07 /* English */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		1DDD58140DA1D0A300B32029 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1DDD58150DA1D0A300B32029 /* English */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C01FCF4B08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../Source/EyeTunes-1.3.2/build/Release\"",
+					"\"$(SRCROOT)/../Source/BGHUDAppKit/build/Release\"",
+					"\"$(SRCROOT)\"",
+				);
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Bruckner_Prefix.pch;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				PRODUCT_NAME = Bruckner;
+			};
+			name = Debug;
+		};
+		C01FCF4C08A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../Source/EyeTunes-1.3.2/build/Release\"",
+					"\"$(SRCROOT)/../Source/BGHUDAppKit/build/Release\"",
+					"\"$(SRCROOT)\"",
+				);
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Bruckner_Prefix.pch;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				PRODUCT_NAME = Bruckner;
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PREBINDING = NO;
+				SDKROOT = macosx10.5;
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = macosx10.5;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "Bruckner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4B08A954540054247B /* Debug */,
+				C01FCF4C08A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Bruckner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}

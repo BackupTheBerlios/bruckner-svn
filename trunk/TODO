@@ -1,0 +1,30 @@
+TODO for Bruckner:
+
+/*
+ TODO:
+ - make sure a song is played when 'Play' is pressed 
+ - no Dock icon?
+ */
+
+* shuffle / change repeat mode
+
+* a way to select:
+	a) Playlist
+	b) Album to play
+
+* L10n (at least German. This is easy.)
+
+* User Preferences:
+	[ ] Launch iTunes on startup
+	[x] Show Album Art in Dock
+	    Hotkey: <F6>
+
+* Better Artwork
+
+* More Core Animation (where appropriate)
+
+* actually use the StatusItem code + MAAttachedWindow
+	is this _really_ needed?
+	
+* Re-think program architecture. 
+  Would it make sense to use ArrayController for Playlist songs / album songs?
