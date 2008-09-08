@@ -14,8 +14,6 @@
 		8F1BB2A40E5E7F160064DF8D /* AppController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F1BB2A30E5E7F160064DF8D /* AppController.m */; };
 		8F1BB2A90E5E7F300064DF8D /* ITunesController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F1BB2A80E5E7F300064DF8D /* ITunesController.m */; };
 		8F1BB2BF0E5E80BB0064DF8D /* BrucknerStatusItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F1BB2BE0E5E80BB0064DF8D /* BrucknerStatusItemView.m */; };
-		8F1BB3860E5E93410064DF8D /* BGHUDAppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F1BB3850E5E93410064DF8D /* BGHUDAppKit.framework */; };
-		8F1BB3A10E5E934F0064DF8D /* BGHUDAppKit.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8F1BB3850E5E93410064DF8D /* BGHUDAppKit.framework */; };
 		8F1BB3F70E5E97180064DF8D /* BrucknerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F1BB3F60E5E97180064DF8D /* BrucknerView.m */; };
 		8F1BB40E0E5E98010064DF8D /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 8F1BB40D0E5E98010064DF8D /* Credits.rtf */; };
 		8F23F93F0E67B5CB00396F32 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F23F93E0E67B5CB00396F32 /* QuartzCore.framework */; };
@@ -41,6 +39,8 @@
 		8F889FAD0E7545F00088AFB4 /* Play.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F889FA90E7545F00088AFB4 /* Play.png */; };
 		8F88A0030E7567660088AFB4 /* ETEyeTunes+Bruckner.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F88A0020E7567660088AFB4 /* ETEyeTunes+Bruckner.m */; };
 		8F88A1100E75C21E0088AFB4 /* README.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 8F88A10F0E75C21E0088AFB4 /* README.rtf */; };
+		8F88A1A60E75CCBB0088AFB4 /* BGHUDAppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F88A1A50E75CCBB0088AFB4 /* BGHUDAppKit.framework */; };
+		8F88A1A70E75CCC40088AFB4 /* BGHUDAppKit.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8F88A1A50E75CCBB0088AFB4 /* BGHUDAppKit.framework */; };
 		8FC933040E610F3600D21805 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FC933030E610F3600D21805 /* Carbon.framework */; };
 		8FD9B0100E65CAD7000FD4E7 /* BrucknerAlbumArtView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FD9B00F0E65CAD7000FD4E7 /* BrucknerAlbumArtView.m */; };
 		8FF875C60E6062C7002715BD /* BrucknerPlayPauseButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FF875C50E6062C7002715BD /* BrucknerPlayPauseButton.m */; };
@@ -53,8 +53,8 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				8F88A1A70E75CCC40088AFB4 /* BGHUDAppKit.framework in CopyFiles */,
 				8F6822AA0E741E280021DA01 /* EyeTunes.framework in CopyFiles */,
-				8F1BB3A10E5E934F0064DF8D /* BGHUDAppKit.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,7 +77,6 @@
 		8F1BB2A80E5E7F300064DF8D /* ITunesController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ITunesController.m; sourceTree = "<group>"; };
 		8F1BB2BD0E5E80BB0064DF8D /* BrucknerStatusItemView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BrucknerStatusItemView.h; sourceTree = "<group>"; };
 		8F1BB2BE0E5E80BB0064DF8D /* BrucknerStatusItemView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BrucknerStatusItemView.m; sourceTree = "<group>"; };
-		8F1BB3850E5E93410064DF8D /* BGHUDAppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BGHUDAppKit.framework; path = ../Source/BGHUDAppKit/build/Release/BGHUDAppKit.framework; sourceTree = SOURCE_ROOT; };
 		8F1BB3F50E5E97180064DF8D /* BrucknerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BrucknerView.h; sourceTree = "<group>"; };
 		8F1BB3F60E5E97180064DF8D /* BrucknerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BrucknerView.m; sourceTree = "<group>"; };
 		8F1BB40D0E5E98010064DF8D /* Credits.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = Credits.rtf; sourceTree = "<group>"; };
@@ -112,6 +111,7 @@
 		8F88A0010E7567660088AFB4 /* ETEyeTunes+Bruckner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ETEyeTunes+Bruckner.h"; sourceTree = "<group>"; };
 		8F88A0020E7567660088AFB4 /* ETEyeTunes+Bruckner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ETEyeTunes+Bruckner.m"; sourceTree = "<group>"; };
 		8F88A10F0E75C21E0088AFB4 /* README.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = README.rtf; sourceTree = "<group>"; };
+		8F88A1A50E75CCBB0088AFB4 /* BGHUDAppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BGHUDAppKit.framework; sourceTree = "<group>"; };
 		8FC933030E610F3600D21805 /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = System/Library/Frameworks/Carbon.framework; sourceTree = SDKROOT; };
 		8FD9B00E0E65CAD7000FD4E7 /* BrucknerAlbumArtView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BrucknerAlbumArtView.h; sourceTree = "<group>"; };
 		8FD9B00F0E65CAD7000FD4E7 /* BrucknerAlbumArtView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BrucknerAlbumArtView.m; sourceTree = "<group>"; };
@@ -125,10 +125,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
-				8F1BB3860E5E93410064DF8D /* BGHUDAppKit.framework in Frameworks */,
 				8FC933040E610F3600D21805 /* Carbon.framework in Frameworks */,
 				8F23F93F0E67B5CB00396F32 /* QuartzCore.framework in Frameworks */,
 				8F6822A70E741E1D0021DA01 /* EyeTunes.framework in Frameworks */,
+				8F88A1A60E75CCBB0088AFB4 /* BGHUDAppKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -158,10 +158,10 @@
 		1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8F88A1A50E75CCBB0088AFB4 /* BGHUDAppKit.framework */,
 				8F6822A60E741E1D0021DA01 /* EyeTunes.framework */,
 				8F23F93E0E67B5CB00396F32 /* QuartzCore.framework */,
 				8FC933030E610F3600D21805 /* Carbon.framework */,
-				8F1BB3850E5E93410064DF8D /* BGHUDAppKit.framework */,
 				1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */,
 			);
 			name = "Linked Frameworks";
