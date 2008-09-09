@@ -19,4 +19,8 @@ NSString * const BrucknerPausedNotification = @"BrucknerPaused";
 NSString * const BrucknerStoppedNotification = @"BrucknerStopped";
 NSString * const BrucknerNextTrackNotification = @"BrucknerNextTrack";
 NSString * const BrucknerPrevTrackNotification = @"BrucknerPrevTrack";
+
+NSString * const BrucknerShuffledNotification = @"BrucknerShuffledNotification";
+NSString * const BrucknerRepeatModeNotification = @"BrucknerRepeatModeNotification";
+
 #pragma mark -
