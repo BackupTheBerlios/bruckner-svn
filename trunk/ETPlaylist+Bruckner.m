@@ -8,8 +8,30 @@
 
 #import <EyeTunes/EyeTunes.h>
 #import <EyeTunes/ETDebug.h>
+#import "BrucknerITunesEvents.h"
 
 @implementation ETPlaylist (Bruckner)
+
+- (BOOL) isShuffled
+{
+	return (BOOL) [self getPropertyAsIntegerForDesc:ET_PLAYLIST_PROP_SHUFFLE];
+}
+
+- (void) setShuffled:(BOOL)shuffled
+{
+	BOOL old = [self isShuffled];
+	if (shuffled != old) {
+		[self setPropertyWithInteger:(int) shuffled
+				     forDesc:ET_PLAYLIST_PROP_SHUFFLE];
+		
+		NSDictionary *d = [NSDictionary dictionaryWithObject:[NSNumber numberWithBool:shuffled]
+							      forKey:@"BrucknerEyeTunesShuffled"];
+		[[NSNotificationCenter defaultCenter] postNotificationName:BrucknerShuffledNotification
+								    object:self
+								  userInfo:d];
+	}
+}
+
 
 - (BOOL) setPropertyWithEnum:(DescType)value 
 		     forDesc:(DescType)descType

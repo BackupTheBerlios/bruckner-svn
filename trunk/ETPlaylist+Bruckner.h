@@ -12,5 +12,6 @@
 @interface ETPlaylist (Bruckner)
 
 - (BOOL) setPropertyWithEnum:(DescType)value forDesc:(DescType)descType;
-
+- (void) setShuffled:(BOOL)shuffled;
+- (BOOL) isShuffled;
 @end
