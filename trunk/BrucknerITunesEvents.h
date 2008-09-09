@@ -19,3 +19,6 @@ extern NSString * const BrucknerPausedNotification;
 extern NSString * const BrucknerStoppedNotification;
 extern NSString * const BrucknerNextTrackNotification;
 extern NSString * const BrucknerPrevTrackNotification;
+
+extern NSString * const BrucknerShuffledNotification;
+extern NSString * const BrucknerRepeatModeNotification;
