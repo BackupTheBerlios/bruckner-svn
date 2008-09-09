@@ -1,18 +1,27 @@
 TODO for Bruckner:
 
-/*
- TODO:
- - make sure a song is played when 'Play' is pressed 
- - no Dock icon?
- */
+Roadmap to Bruckner 1:
+----------------------
 
-* shuffle / change repeat mode
+* change repeat mode
 
 * a way to select:
 	a) Playlist
 	b) Album to play
 
+* More Core Animation (where appropriate)
+	- Navigation Panel 
+		- shake it when shuffle mode is selected?
+		- skim to right on 'next track'
+		- skim to left on 'previous track'
+	- Desktop Window
+		- if shuffle mode & new song: rotate window, then display new album artwork
+
 * Dock menu and Window menu should have 'Show Navigation Panel' entry
+
+
+Roadmap to Bruckner 2:
+----------------------
 
 * L10n (at least German. This is easy.)
 
@@ -23,10 +32,21 @@ TODO for Bruckner:
 
 * Better Artwork
 
-* More Core Animation (where appropriate)
+
+Roadmap to Bruckner 3:
+----------------------
+
+* Search iTunes stuff
+
+
+Anytime:
+--------
 
 * actually use the StatusItem code + MAAttachedWindow
 	is this _really_ needed?
 	
 * Re-think program architecture. 
   Would it make sense to use ArrayController for Playlist songs / album songs?
+  
+  
+  
