@@ -100,17 +100,23 @@
 {
 	if (shuffleMode != newMode) {
 		ETPlaylist *playlist = [[EyeTunes sharedInstance] currentPlaylist];
-		[playlist setPropertyWithInteger:(int) newMode
-					 forDesc:ET_PLAYLIST_PROP_SHUFFLE];
+		[playlist setShuffled:newMode];
 	}
 	shuffleMode = newMode;
+}
+
+- (void) handleShuffleChanged:(NSNotification *)n
+{
+	NSNumber *number = [[n userInfo] objectForKey:@"BrucknerEyeTunesShuffled"];
+	BOOL shuffled = [number boolValue];
+	[self setShuffleMode:shuffled];
 }
 
 
 - (void) checkRepeatAndShuffle 
 {
 	ETPlaylist *playlist = [[EyeTunes sharedInstance] currentPlaylist];
-	BOOL shuffle = [playlist getPropertyAsIntegerForDesc:ET_PLAYLIST_PROP_SHUFFLE];
+	BOOL shuffle = [playlist isShuffled];
 	if (shuffle != shuffleMode)
 		[self setShuffleMode:shuffle];
 	
@@ -187,7 +193,7 @@
 			if (currentPlaylistId != [[e currentPlaylist] persistentId]) {
 				playlistChanged = YES;
 				currentPlaylistId = [[e currentPlaylist] persistentId];				
-				//[self checkRepeatAndShuffle];
+				[self checkRepeatAndShuffle];
 			}
 					
 			[nc postNotificationName:BrucknerPlayingNewSongNotification object:self];
@@ -242,15 +248,22 @@
 		}
 	}
 	
-	NSNotificationCenter *nc = [[NSWorkspace sharedWorkspace] notificationCenter];
-	[nc addObserver:self 
+	NSNotificationCenter *wnc = [[NSWorkspace sharedWorkspace] notificationCenter];
+	[wnc addObserver:self 
 	       selector:@selector (workspaceDidTerminateApplicationNotification:)
 		   name:NSWorkspaceDidTerminateApplicationNotification
 		 object:nil];
-	[nc addObserver:self 
+	[wnc addObserver:self 
 	       selector:@selector (workspaceDidLaunchApplicationNotification:)
 		   name:NSWorkspaceDidLaunchApplicationNotification
 		 object:nil];
+	
+	NSNotificationCenter *nc = [NSNotificationCenter defaultCenter];
+	[nc addObserver:self
+	       selector:@selector (handleShuffleChanged:)
+		   name:BrucknerShuffledNotification
+		 object:nil];
+	
 }
 
 - (void) awakeFromNib
