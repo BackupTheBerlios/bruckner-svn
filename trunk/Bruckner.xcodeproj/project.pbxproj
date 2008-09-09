@@ -44,6 +44,9 @@
 		8FC933040E610F3600D21805 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FC933030E610F3600D21805 /* Carbon.framework */; };
 		8FD9B0100E65CAD7000FD4E7 /* BrucknerAlbumArtView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FD9B00F0E65CAD7000FD4E7 /* BrucknerAlbumArtView.m */; };
 		8FF875C60E6062C7002715BD /* BrucknerPlayPauseButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FF875C50E6062C7002715BD /* BrucknerPlayPauseButton.m */; };
+		8FFFBE590E765D4F0067E154 /* Shuffle.png in Resources */ = {isa = PBXBuildFile; fileRef = 8FFFBE570E765D4F0067E154 /* Shuffle.png */; };
+		8FFFBE5A0E765D4F0067E154 /* Repeat.png in Resources */ = {isa = PBXBuildFile; fileRef = 8FFFBE580E765D4F0067E154 /* Repeat.png */; };
+		8FFFBF740E76A4440067E154 /* ETPlaylist+Bruckner.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FFFBF730E76A4440067E154 /* ETPlaylist+Bruckner.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -117,6 +120,10 @@
 		8FD9B00F0E65CAD7000FD4E7 /* BrucknerAlbumArtView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BrucknerAlbumArtView.m; sourceTree = "<group>"; };
 		8FF875C40E6062C7002715BD /* BrucknerPlayPauseButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BrucknerPlayPauseButton.h; sourceTree = "<group>"; };
 		8FF875C50E6062C7002715BD /* BrucknerPlayPauseButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BrucknerPlayPauseButton.m; sourceTree = "<group>"; };
+		8FFFBE570E765D4F0067E154 /* Shuffle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Shuffle.png; sourceTree = "<group>"; };
+		8FFFBE580E765D4F0067E154 /* Repeat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Repeat.png; sourceTree = "<group>"; };
+		8FFFBF720E76A4440067E154 /* ETPlaylist+Bruckner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ETPlaylist+Bruckner.h"; sourceTree = "<group>"; };
+		8FFFBF730E76A4440067E154 /* ETPlaylist+Bruckner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ETPlaylist+Bruckner.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +157,8 @@
 				8F6B9E060E681080001FE705 /* NSImage+Bruckner.m */,
 				8F88A0010E7567660088AFB4 /* ETEyeTunes+Bruckner.h */,
 				8F88A0020E7567660088AFB4 /* ETEyeTunes+Bruckner.m */,
+				8FFFBF720E76A4440067E154 /* ETPlaylist+Bruckner.h */,
+				8FFFBF730E76A4440067E154 /* ETPlaylist+Bruckner.m */,
 				8F3931A80E72875F00FF8877 /* StatusItem - UNUSED! */,
 			);
 			name = Classes;
@@ -238,6 +247,8 @@
 				8F889FA70E7545F00088AFB4 /* Next.png */,
 				8F889FA80E7545F00088AFB4 /* Pause.png */,
 				8F889FA90E7545F00088AFB4 /* Play.png */,
+				8FFFBE570E765D4F0067E154 /* Shuffle.png */,
+				8FFFBE580E765D4F0067E154 /* Repeat.png */,
 				8F6821220E7409BD0021DA01 /* Bruckner150.png */,
 				8F254E080E7346AA00A14A71 /* BB.icns */,
 				8F254C4B0E73266900A14A71 /* Cover.png */,
@@ -345,6 +356,8 @@
 				8F889FAC0E7545F00088AFB4 /* Pause.png in Resources */,
 				8F889FAD0E7545F00088AFB4 /* Play.png in Resources */,
 				8F88A1100E75C21E0088AFB4 /* README.rtf in Resources */,
+				8FFFBE590E765D4F0067E154 /* Shuffle.png in Resources */,
+				8FFFBE5A0E765D4F0067E154 /* Repeat.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -387,6 +400,7 @@
 				8F3935BD0E72CFF900FF8877 /* BrucknerPanelController.m in Sources */,
 				8F254E5E0E734B6C00A14A71 /* BrucknerPanel.m in Sources */,
 				8F88A0030E7567660088AFB4 /* ETEyeTunes+Bruckner.m in Sources */,
+				8FFFBF740E76A4440067E154 /* ETPlaylist+Bruckner.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

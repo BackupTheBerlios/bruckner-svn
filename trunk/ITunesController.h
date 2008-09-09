@@ -13,7 +13,13 @@
 	int currentTrackId;
 	long long int currentPlaylistId;
 	BOOL playlistChanged;
+	
+	BOOL shuffleMode;
+	BOOL repeatMode;
 }
+
+@property (readwrite) BOOL shuffleMode;
+@property (readwrite) BOOL repeatMode;
 
 - (IBAction) playPause:(id)sender;
 - (IBAction) nextTrack:(id)sender;

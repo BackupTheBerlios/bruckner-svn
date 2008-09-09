@@ -10,8 +10,11 @@
 
 #import "ITunesController.h"
 #import <EyeTunes/EyeTunes.h>
+#import "ETPlaylist+Bruckner.h"
 
 @implementation ITunesController
+@synthesize shuffleMode;
+@synthesize repeatMode;
 
 #pragma mark Utility methods
 
@@ -75,6 +78,61 @@
 	[[[EyeTunes sharedInstance] currentTrack] setRating:newRating];
 }
 
+#pragma mark Repeat & Shuffle
+
+- (void) setRepeatMode:(BOOL)newMode
+{
+	if (repeatMode != newMode) {
+		ETPlaylist *playlist = [[EyeTunes sharedInstance] currentPlaylist];
+		DescType mode;
+		if (newMode)
+			mode = kETRepeatModeAll;
+		else
+			mode = kETRepeatModeOff;
+
+		[playlist setPropertyWithEnum:mode
+					 forDesc:ET_PLAYLIST_PROP_REPEAT];
+	}
+	repeatMode = newMode;
+}
+
+- (void) setShuffleMode:(BOOL)newMode
+{
+	if (shuffleMode != newMode) {
+		ETPlaylist *playlist = [[EyeTunes sharedInstance] currentPlaylist];
+		[playlist setPropertyWithInteger:(int) newMode
+					 forDesc:ET_PLAYLIST_PROP_SHUFFLE];
+	}
+	shuffleMode = newMode;
+}
+
+
+- (void) checkRepeatAndShuffle 
+{
+	ETPlaylist *playlist = [[EyeTunes sharedInstance] currentPlaylist];
+	BOOL shuffle = [playlist getPropertyAsIntegerForDesc:ET_PLAYLIST_PROP_SHUFFLE];
+	if (shuffle != shuffleMode)
+		[self setShuffleMode:shuffle];
+	
+	DescType repeat = [playlist getPropertyAsEnumForDesc:ET_PLAYLIST_PROP_REPEAT];
+	BOOL newRepeat;
+	switch (repeat) {
+		case kETRepeatModeOne:
+			// not implemented yet, leave everything unchanged:
+			newRepeat = repeatMode;
+			break;
+		case kETRepeatModeAll:
+			newRepeat = YES;
+			break;		
+		case kETRepeatModeOff:		
+		default:
+			newRepeat = NO;
+			break;
+	}
+	
+	if (repeatMode != newRepeat)
+		[self setRepeatMode:newRepeat];
+}
 
 #pragma mark Controll iTunes
 
@@ -129,6 +187,7 @@
 			if (currentPlaylistId != [[e currentPlaylist] persistentId]) {
 				playlistChanged = YES;
 				currentPlaylistId = [[e currentPlaylist] persistentId];				
+				//[self checkRepeatAndShuffle];
 			}
 					
 			[nc postNotificationName:BrucknerPlayingNewSongNotification object:self];
@@ -141,6 +200,13 @@
 	}
 }
 
+
+// sourceSaved is also called some seconds after you change 
+// 'shuffle' or 'repeat' in iTunes
+- (void) handleITunesSourceSaved:(NSNotification *)notification
+{
+	[self checkRepeatAndShuffle];
+}
 
 
 #pragma mark Startup
@@ -162,6 +228,8 @@
 			playlistChanged = YES;
 		}
 		
+		[self checkRepeatAndShuffle];
+	
 		switch ([e playerState]) {
 			case kETPlayerStatePlaying:
 				// we've already updated UI above.
@@ -192,6 +260,10 @@
 	       selector:@selector (handleITunesPlayerInfo:)
 		   name:@"com.apple.iTunes.playerInfo"
 		 object:nil];
+	[dc addObserver:self
+	       selector:@selector (handleITunesSourceSaved:)
+		   name:@"com.apple.iTunes.sourceSaved"
+		 object:nil];	
 }
 
 - (id) init
@@ -204,6 +276,9 @@
 	currentTrackId = -1;	
 	currentPlaylistId = -1;
 	playlistChanged = YES;
+	
+	[self setShuffleMode:NO];
+	[self setRepeatMode:NO];
 	
 	return self;
 }
