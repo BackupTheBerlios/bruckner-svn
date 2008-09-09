@@ -8,7 +8,7 @@
 
 #import <EyeTunes/EyeTunes.h>
 #import "BrucknerPanel.h"
-
+#import "ETPlaylist+Bruckner.h"
 
 @implementation BrucknerPanel
 
@@ -21,7 +21,9 @@
 #define BRUCKNER_KEY_N			45
 #define BRUCKNER_KEY_B			11
 #define BRUCKNER_KEY_P			35
-#define BRUCKNER_KEY_Q		 
+#define BRUCKNER_KEY_R			15
+#define BRUCKNER_KEY_S			 1
+#define BRUCKNER_KEY_Q			12
 #define BRUCKNER_KEY_NUMERIC_FOUR	86
 #define BRUCKNER_KEY_NUMERIC_FIVE	87
 #define BRUCKNER_KEY_NUMERIC_SIX	88
@@ -33,6 +35,7 @@
 		return;
 
 	EyeTunes *e = [EyeTunes sharedInstance];
+	ETPlaylist *playlist = [e currentPlaylist];
 
 	switch ([event keyCode]) {
 		case BRUCKNER_KEY_ESCAPE:
@@ -55,6 +58,15 @@
 		case BRUCKNER_KEY_NUMERIC_SIX:			
 		case NSRightArrowFunctionKey:
 			[e nextTrack];
+			break;
+		case BRUCKNER_KEY_S:
+			if ([playlist isShuffled])
+				[playlist setShuffled:NO];
+			else
+				[playlist setShuffled:YES];
+			break;
+		case BRUCKNER_KEY_R:
+			//[e switchRepeat];
 			break;
 		default:
 			break;
