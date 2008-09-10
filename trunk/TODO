@@ -9,16 +9,9 @@ Roadmap to Bruckner 1:
 	a) Playlist
 	b) Album to play
 
-* More Core Animation (where appropriate)
-	- Navigation Panel 
-		- shake it when shuffle mode is selected?
-		- skim to right on 'next track'
-		- skim to left on 'previous track'
-	- Desktop Window
-		- if shuffle mode & new song: rotate window, then display new album artwork
-
 * Dock menu and Window menu should have 'Show Navigation Panel' entry
 
+* scale albumArt using CoreGraphics!
 
 Roadmap to Bruckner 2:
 ----------------------
@@ -32,6 +25,15 @@ Roadmap to Bruckner 2:
 
 * Better Artwork
 
+* More Core Animation (where appropriate)
+	- Navigation Panel 
+		- shake it when shuffle mode is selected?
+		- skim to right on 'next track'
+		- skim to left on 'previous track'
+	- Desktop Window
+		- if shuffle mode & new song: rotate window, then display new album artwork
+	- rotation is disturbing. Slowling fade in / fade out.	
+	
 
 Roadmap to Bruckner 3:
 ----------------------

@@ -9,9 +9,12 @@
 #import <Cocoa/Cocoa.h>
 @class ETTrack;
 
+#define BRUCKNER_ALBUMART_SIZE 120
+
 @interface NSImage (Bruckner)
 
 - (CGImageRef) cgImage;
 + (NSImage *) albumArtImageForTrack:(ETTrack *)track;
+
 
 @end

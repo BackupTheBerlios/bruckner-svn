@@ -61,8 +61,8 @@
 	imageLayer = [CALayer layer];
 
 	// 150x150 hardcoded here!
-	imageLayer.frame = CGRectMake (0, 0, 150, 150);
-	imageLayer.bounds = CGRectMake (0, 0, 150, 150);
+	imageLayer.frame = CGRectMake (0, 0, BRUCKNER_ALBUMART_SIZE, BRUCKNER_ALBUMART_SIZE);
+	imageLayer.bounds = CGRectMake (0, 0, BRUCKNER_ALBUMART_SIZE, BRUCKNER_ALBUMART_SIZE);
 	imageLayer.anchorPoint = CGPointMake(0.5, 0.5);
 	imageLayer.position = CGPointMake ([self frame].size.width / 2, [self frame].size.height / 2);
 	imageLayer.contents = (id) cgImage;

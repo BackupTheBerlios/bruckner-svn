@@ -27,12 +27,8 @@ CGImageRef CreateCGImageFromData(NSData* data)
 	return imageRef;
 }
 
-
-
 - (CGImageRef) cgImage
 {
-	//NSSize size = NSMakeSize(150, 150);
-	//[self setSize:size];
 	NSData* data = [self TIFFRepresentation];
 	return CreateCGImageFromData (data);
 }
@@ -75,6 +71,5 @@ CGImageRef CreateCGImageFromData(NSData* data)
 	[attributes release];
 	return image;
 }
-
 
 @end

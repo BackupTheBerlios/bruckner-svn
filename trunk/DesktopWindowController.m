@@ -32,7 +32,6 @@
 	} else {
 		NSImage *image = [NSImage albumArtImageForTrack:track];
 		[albumArtView displayImage:image];	
-		[image release];
 	}
 }
 
